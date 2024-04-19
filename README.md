@@ -1,5 +1,7 @@
-# Raspberry-pi-pico-sensor-frontend
+ # Raspberry-pi-pico-sensor-frontend
+Frontend for Raspberry pi pico wh Temperature and Humidity sensor
 
+## Framework
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
 ## Development server
