@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="data-item" >Current status:</div>
+    <div id="temp" class="data-item"  [style.color]="(data.temp > 50 || data.temp < 15) ? 'red' : 'white'" >Temperature: {{ data.temp }}</div>
+    <div id="humidity" class="data-item"  [style.color]="(data.humidity > 50 || data.humidity < 30) ? 'red' : 'white'">Humidity: {{ data.humidity }}%</div>
+    <div class="data-item">Date and Time: {{ data.shTime }}</div>
+    <br>
+    <br>
+</div>
+
+

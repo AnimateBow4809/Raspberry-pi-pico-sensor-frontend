@@ -1,0 +1,29 @@
+
+<div class="float-date-time-input">
+    <label for="float-input">Enter low Tempreture:</label>
+    <input type="number" step="0.01" id="float-input" name="floatInput" placeholder="0.00" [(ngModel)]="lowTemp">
+
+    <label for="float-input">Enter high Tempreture:</label>
+    <input type="number" step="0.01" id="float-input" name="floatInput" placeholder="0.00" [(ngModel)]="highTemp">
+    <button (click)="onSubmit()">search</button>
+</div>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let t of datas">
+            <td class="align-middle">{{t.id}}</td>
+            <td class="align-middle">{{t.temp}}</td>
+            <td class="align-middle">{{t.humidity}}%</td>
+            <td class="align-middle">{{t.shTime}}</td>
+            
+        </tr>
+    </tbody>
+</table>
